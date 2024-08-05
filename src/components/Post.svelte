@@ -3,21 +3,53 @@
 </script>
 
 <div class="post">
-  <h2 class="title">{post.title}</h2>
-  <p class="description">{post.description}</p>
-  <p class="goal"><span>Goal:</span> ${post.goal.toFixed(2)}</p>
-  <p class="current"><span>Current Amount:</span> ${post.current_amount.toFixed(2)}</p>
-  <p class="createdBy">creator: {post.creator}</p>
-  <p class="createdAt">{new Date(post.created_at).toLocaleString()}</p>
-  <button class="donate" type="button">donate</button>
+  <div class="inner">
+    <h2 class="title">{post.title}</h2>
+    {#if Array.isArray(post.pictures) && post.pictures.length > 0}
+      <div class="pictures">
+        {#each post.pictures as pic}
+          <img draggable="false" src={pic} alt="" />
+        {/each}
+      </div>
+    {/if}
+    <p class="description">{post.description}</p>
+    <p class="goal"><span>Goal:</span> ${post.goal.toFixed(2)}</p>
+    <p class="current">
+      <span>Current Amount:</span> ${post.current_amount.toFixed(2)}
+    </p>
+    <p class="createdBy">creator: {post.creator}</p>
+    <p class="createdAt">{new Date(post.created_at).toLocaleString()}</p>
+    <button class="donate" type="button">donate</button>
+  </div>
 </div>
 
 <style>
   .post {
     width: 100%;
-    padding: 20px;
     background-color: #f2f2f2;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pictures {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pictures img {
+    border: 1px solid #507fff;
+    border-radius: 6px;
+    max-height: 100px;
+  }
+
+  .inner {
+    width: 100%;
+    padding: 20px;
     position: relative;
   }
 

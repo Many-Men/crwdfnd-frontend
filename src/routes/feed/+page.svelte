@@ -11,7 +11,19 @@
       creator: "nature_lover89",
       like_count: 1200,
       created_at: "2024-08-05T14:30:00Z",
-      pictures: ["dasdasd.png", "image.png"],
+      pictures: [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScn1fENC_uYvSu1-LTY_BJu2NfBh7Uz08frg&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScn1fENC_uYvSu1-LTY_BJu2NfBh7Uz08frg&s"],
+    },
+    {
+      campaign_id: "123abc",
+      title: "Save the Rainforest",
+      description: "A campaign to raise funds for rainforest conservation.",
+      goal: 50000.0,
+      current_amount: 23000.5,
+      creator: "nature_1ver89",
+      like_count: 1200,
+      created_at: "2024-08-05T14:30:00Z",
+      pictures: [],
     },
     {
       campaign_id: "123abc",
@@ -22,7 +34,7 @@
       creator: "nature_lover89",
       like_count: 1200,
       created_at: "2024-08-05T14:30:00Z",
-      pictures: ["dasdasd.png", "image.png"],
+      pictures: [],
     },
     {
       campaign_id: "123abc",
@@ -33,18 +45,7 @@
       creator: "nature_lover89",
       like_count: 1200,
       created_at: "2024-08-05T14:30:00Z",
-      pictures: ["dasdasd.png", "image.png"],
-    },
-    {
-      campaign_id: "123abc",
-      title: "Save the Rainforest",
-      description: "A campaign to raise funds for rainforest conservation.",
-      goal: 50000.0,
-      current_amount: 23000.5,
-      creator: "nature_lover89",
-      like_count: 1200,
-      created_at: "2024-08-05T14:30:00Z",
-      pictures: ["dasdasd.png", "image.png"],
+      pictures: [],
     },
   ];
 </script>
@@ -93,5 +94,6 @@
     justify-content: center;
     margin: auto;
     gap: 20px;
+    margin-bottom: 20px;
   }
 </style>

@@ -436,6 +436,11 @@ svelte-hmr@^0.16.0:
     magic-string "^0.30.4"
     periscopic "^3.1.0"
 
+swiper@^11.1.9:
+  version "11.1.9"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-11.1.9.tgz"
+  integrity sha512-rflu8zvfGa3x1v/aeSufk4zRJffhOQowyvtJlp46sUBnOqAuk1Rdv5Ldj0AWWBV595iZ+ZMk7VB35ZRtRUomtA==
+
 tiny-glob@^0.2.9:
   version "0.2.9"
   resolved "https://registry.npmjs.org/tiny-glob/-/tiny-glob-0.2.9.tgz"
