@@ -12,22 +12,21 @@
 
 <style lang="scss">
   .feed {
-    
   }
 
   .header {
     width: 100%;
-    background-color: red;
     margin-bottom: 20px;
-
-    &__container {
-      max-width: 800px;
-      width: 100%;
-      margin: auto;
-      padding: 20px;
-    }
+    background-color: red;
   }
-  
+
+  .header__container {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    height: 80px;
+  }
+
   .posts {
     max-width: 800px;
     display: flex;
